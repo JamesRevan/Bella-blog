@@ -2,13 +2,17 @@ module Blog
   class PostsController < BlogController
 
     def index
-      @posts = Post.most_recent.published.paginate(:page => params[:page], per_page: 2)
+      @posts = storage.list_for(params[:page], params[:tag])
     end
 
     def show
-      @post = Post.friendly.find(params[:id])
+      @post = storage.friendly.find(params[:id])
     end
 
-  end
+    private
 
+    def storage
+      Post.published
+    end
+  end
 end
