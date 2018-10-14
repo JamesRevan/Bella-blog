@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'friendly_id', '~> 5.1.0'
 # Use Capistrano for deployment
