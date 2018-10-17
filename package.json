@@ -1,5 +1,7 @@
 {
   "name": "Bella-blog",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
 }

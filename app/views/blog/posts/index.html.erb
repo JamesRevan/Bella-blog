@@ -2,6 +2,8 @@
 <% provide(:blog_active, 'active') %>
 
   <div class="row">
+    <%= render "layouts/title" %>
+    <%= render "layouts/banner" %>
     <%= render @posts %>
   </div>
   <div class="apple_pagination">

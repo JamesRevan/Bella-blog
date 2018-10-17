@@ -36,6 +36,9 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'annotate'
 gem 'will_paginate', '~> 3.1.0'
 gem 'acts-as-taggable-on', '~> 6.0'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'popper_js', '~> 1.14.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

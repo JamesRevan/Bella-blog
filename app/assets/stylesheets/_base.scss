@@ -1,0 +1,25 @@
+  body {
+    background-color: $light-gray;
+  }
+
+h1, h2, h3, h4, h5, h6, p {
+  color:n $primary-text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, p span {
+  font-family: 'Merriweather', serif !important;
+}
+
+.published {
+  font-size: 9px;
+  font-style: italic;
+}
+
+.tags {
+  font-size: 12px;
+  font-style: italic;
+}

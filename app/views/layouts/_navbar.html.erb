@@ -1,36 +1,12 @@
-<!-- <div class="collaspe" id="exCollapsingNavbar">
-  <div class="collapse-bg p-a-1">
-    <div class="card">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>
-        </li>
-        <li class="list-group-item">
-          <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
-        </li>
-        <li class="list-group-item">
-          <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
-        </li>
-        <% if author_signed_in? %>
-          <li class="list-group-item">
-            <%= link_to 'My Posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
-          </li>
-          <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
-          <% end %>
-      </ul>
-    </div>
-  </div>
-</div> -->
-
 <nav class="navbar navbar-light bg-faded">
   <div class="container">
-    <a href="/" class="navbar-brand">
-      Bella<span class="light">blog</span>
-    </a>
-    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-      &#9776;
-    </button>
-    <ul class="nav navbar-nav pull-sm-right hidden-xs-down">
+    <div class="navbar-logo">
+      <%= image_tag "climb.svg" %>
+      Travel
+      <br>
+      Blog
+    </div>
+    <ul class="nav pull-sm-right hidden-xs-down">
       <li class="nav-item">
         <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>
       </li>
@@ -41,6 +17,51 @@
         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
       <% if author_signed_in? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%= yield(:author) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            Author
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <%= link_to 'My Posts', authors_posts_path, class: "dropdown-item" %>
+          <%= link_to 'Account', authors_account_path, class: "dropdown-item" %>
+          <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+      <% end %>
+    </ul>
+  </div>
+</nav>
+
+<!-- <div id="homecarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3500">
+  <div class="carousel-inner">
+    <div class="active item">
+      <div class="carousel-gradient"></div>
+      <%= image_tag "2.jpeg" %>
+    </div>
+    <div class="item">
+      <div class="carousel-gradient"></div>
+      <%= image_tag "1.jpeg" %>
+    </div>
+    <div class="item">
+      <div class="carousel-gradient"></div>
+      <%= image_tag "3.png" %>
+    </div>
+    <div class="item">
+      <div class="carousel-gradient"></div>
+      <%= image_tag "4.jpeg" %>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <nav class="navbar navbar-light bg-light">
+  <div class="container">
+  <a href="/" class="navbar-brand">Bella<span class="light">blog</span></a>
+    <form class="form-inline navnav pull-sm-right hidden-xs-down">
+    <a class="nav-item"><%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %></a>
+    <a class="nav-item"> <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %></a>
+    <a class="nav-item"><%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %></a>
+    <div style="padding-left: 10px;">
+      <% if author_signed_in? %>
         <li class="nav-item">
           <%= link_to 'My Posts', authors_posts_path, class: "nav-link #{yield(:author)}" %>
         </li>
@@ -48,6 +69,9 @@
           <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "nav-link" %>
         </li>
       <% end %>
-    </ul>
+    </div>
+  </form>
   </div>
 </nav>
+
+ -->
