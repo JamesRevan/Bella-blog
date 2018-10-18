@@ -1,6 +1,26 @@
-.footerlink {
-  text-color: #FFF;
+ h5 {
+  color: #FFF;
+  font-family: "Montserrat", "sans-serif";
 }
+
+a {
+  color: #FFF;
+  font-family: "Montserrat", "sans-serif";
+    &:hover {
+        color: $pop-black;
+      }
+}
+
+.footer-copyright {
+  color: #FFF;
+}
+
+.greenback {
+  background-color: $pop-green;
+}
+
+
+
 // Footer photos
 
 .photostream {
