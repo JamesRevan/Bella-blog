@@ -1,7 +1,7 @@
 #stage {
   margin: 1em auto;
   width: 100%;
-  height: 600px;
+  height: 100vh;
   margin-bottom: 230px;
   display: flex;
   justify-content: center;
@@ -15,10 +15,12 @@
 }
 
 #stage a img {
+  position: relative;
   border: 1px solid #ccc;
   background: #fff;
   width: inherit; /* Added */
   height: inherit; /* Added */
+  font-weight: bold;
 }
 
 #stage a:nth-of-type(1) {
@@ -44,3 +46,20 @@
     opacity: 0.0;
   }
 }
+
+#banner-saying {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  padding-top: 6px;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Italianno', cursive;
+}
+
+
+
+
+
+
+
