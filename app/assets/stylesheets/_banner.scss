@@ -1,8 +1,8 @@
 #stage {
   margin: 1em auto;
   width: 100%;
-  height: 400px;
-  margin-bottom: 40px;
+  height: 600px;
+  margin-bottom: 230px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
 
 #stage a:nth-of-type(1) {
   animation-name: fader;
-  animation-delay: 4s;
+  animation-delay: 3s;
   animation-duration: 1s;
   z-index: 20;
 }
