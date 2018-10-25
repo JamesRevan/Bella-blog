@@ -1,0 +1,52 @@
+.about-me {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-me:after {
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.about-me h2 {
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  position: relative;
+}
+
+.about-me h2:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #06D6A9;
+}
+
+.about-me h4 {
+  font-family: 'Italianno', cursive;
+}
+
+.about-me .col-left, .about-me .col-right {
+  width: 50%;
+  float: left;
+  margin-top: 50px
+}
+
+.about-me .col-left {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.about-me .col-left img {
+  max-width: 100%;
+}
+
+#about-me-paragraph {
+  font-size: 14px;
+}
