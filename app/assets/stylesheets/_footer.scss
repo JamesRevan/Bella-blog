@@ -29,10 +29,15 @@
 }
 
 .photo-container > div > img {
-    width: 100%;
-    height: 110%;
-    object-fit: cover;
+    position: relative;
+    float: left;
+    width:  100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
+
 
 @media (max-width: 1200px) {
   .photo-container {
