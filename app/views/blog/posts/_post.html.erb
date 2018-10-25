@@ -11,7 +11,7 @@
       <br>
       <br>
       <p class="tags"><%= raw post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }.join(', ') %></p>
-      <p class="published"><%= post.display_day_published %></p>
+      <p class="published-date"><%= post.display_day_published %></p>
       <% end %>
     </div>
   </div>
