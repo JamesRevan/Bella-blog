@@ -24,7 +24,7 @@
 .photo-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
-    grid-template-rows: repeat(1, 112px);
+    grid-template-rows: repeat(1, 200px);
     margin-top: 360px;
 }
 
