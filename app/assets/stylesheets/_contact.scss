@@ -1,0 +1,76 @@
+.contact-me {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.contact-me:after {
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.contact-me h2 {
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  position: relative;
+}
+
+.contact-me h2:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  margin-left: -40px;
+  left: 50%;
+  bottom: 0px;
+  background-color: #06D6A9;
+}
+
+.contact-me h4 {
+  font-family: 'Italianno', cursive;
+  font-size: 26px;
+}
+
+.contact-me .col-left, .contact-me .col-right {
+  width: 50%;
+  float: left;
+  margin-top: 50px
+}
+
+.contact-me .col-left {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.contact-me .col-left img {
+  max-width: 100%;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#contact-me-paragraph {
+  font-size: 18px;
+  font-family: 'Italianno', cursive;
+}
+
+.contact-me .col-right .icon {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-me-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
